@@ -3,37 +3,15 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Product;
-use App\Models\User;
+use Database\Seeders\AdminUserSeeder;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // Demo Admin
-        $admin = User::updateOrCreate(
-            ['email' => 'admin@shopflow.test'],
-            [
-                'name' => 'ShopFlow Admin',
-                'password' => Hash::make('password'),
-            ]
-        );
-
-        $admin->forceFill(['role' => 'admin'])->save();
-
-        // Demo Customer
-        $customer = User::updateOrCreate(
-            ['email' => 'customer@shopflow.test'],
-            [
-                'name' => 'Demo Customer',
-                'password' => Hash::make('password'),
-            ]
-        );
-
-        $customer->forceFill(['role' => 'customer'])->save();
-
+        $this->call(AdminUserSeeder::class);
         // Categories
         $categoryNames = [
             'Electronics',
