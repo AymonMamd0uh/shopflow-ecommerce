@@ -39,27 +39,33 @@ The application uses a RESTful API architecture, with a React frontend communica
 - Protected customer and admin endpoints.
 - Server-side request validation.
 
+
 ## Screenshots
 
 ### Storefront
-<!-- Add storefront screenshots here -->
+
 | Home Page | Product Details |
 |---|---|
-| ![Home Page](screenshots/store-home.png) | ![Product Details](screenshots/product-details.png) |
+| ![Store Homepage](screenshots/store-home.png) | ![Product Details](screenshots/product-details.png) |
 
 ### Shopping Experience
+
 | Shopping Cart | Checkout |
 |---|---|
 | ![Shopping Cart](screenshots/cart.png) | ![Checkout](screenshots/checkout.png) |
 
 ### Admin Dashboard
-| Dashboard | Products Management |
-|---|---|
-| ![Admin Dashboard](screenshots/admin-dashboard.png) | ![Products Management](screenshots/admin-products.png) |
 
-| Orders Management |
-|---|
-| ![Orders Management](screenshots/admin-orders.png) |
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+### Products Management
+
+![Products Management](screenshots/admin-products.png)
+
+### Orders Management
+
+![Orders Management](screenshots/admin-orders.png)
+
 
 ## Tech Stack
 
